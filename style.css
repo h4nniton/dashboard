@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+       "nav header"
+       "nav main"
+       "nav footer";
+       grid-template-columns: 320px 1fr;
+       grid-template-rows: 100px 1fr 50px;
+       padding: 32px;
+       gap: 32px;
+}
+
+nav{
+    grid-area: nav;
+    background-color: lightcoral;
+    border-radius: 32px;
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 180px 1fr 160px;
+}
+
+.icon-container{
+    background-color: mediumaquamarine;
+}
+
+.menu-containet{
+    background-color: mediumblue;
+}
+
+.guide-container{
+    background-color: mediumpurple;
+}
+
+header{
+    grid-area: header;
+    background-color: lightgreen;
+    display: grid;
+    place-items: end;
+}
+
+.avatar-container{
+    background-color: navy;
+    width: 210px;
+    height: 100%;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "cards cards"
+    "graphic posts";
+    grid-template-rows: 120px 160px 1fr;
+    grid-template-columns: 1fr 300px;
+    gap: 32px;
+}
+
+.title-container{
+    grid-area: title;
+    background-color: olive;
+}
+
+.cards-container{
+    grid-area: cards;
+    background-color: orchid;
+}
+
+.graphic-container{
+    grid-area: graphic;
+    background-color: plum;
+}
+
+.posts-container{
+    grid-area: posts;
+    background-color: rebeccapurple;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightslategrey;
+}
